@@ -1,0 +1,6 @@
+# Principles of MLOps
+Transition friction, Version Control, Performance, Automation, Monitoring, Continuous training 
+# MLflow
+Open Source platform to mainatain end to end machine learning life cycle. 
+# MLFlow components
+## Tracking - 
