@@ -28,5 +28,7 @@ Open Source platform to mainatain end to end machine learning life cycle.
 
 # set_experiment()
 ## set already created experiment
+## we can pass experiment name, experiment id
+## return mlflow.entities.Experiment 
 
 

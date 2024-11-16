@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlflow_demo1/mlruns/586069599495118441/b2337cfd1d2343298fc88b9209a2aeee/artifacts
+end_time: 1731783080733
+entry_point_name: ''
+experiment_id: '586069599495118441'
+lifecycle_stage: active
+run_id: b2337cfd1d2343298fc88b9209a2aeee
+run_name: classy-bee-757
+run_uuid: b2337cfd1d2343298fc88b9209a2aeee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731783073583
+status: 3
+tags: []
+user_id: User
