@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlflow_demo1/mlruns/586069599495118441/6ec93042dde44b76aa8983e72a48e822/artifacts
+end_time: 1731771762736
+entry_point_name: ''
+experiment_id: '586069599495118441'
+lifecycle_stage: active
+run_id: 6ec93042dde44b76aa8983e72a48e822
+run_name: resilient-bass-860
+run_uuid: 6ec93042dde44b76aa8983e72a48e822
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731771755106
+status: 3
+tags: []
+user_id: User

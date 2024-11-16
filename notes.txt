@@ -3,4 +3,20 @@ Transition friction, Version Control, Performance, Automation, Monitoring, Conti
 # MLflow
 Open Source platform to mainatain end to end machine learning life cycle. 
 # MLFlow components
-## Tracking - 
+## Tracking - Track expreriments to record and compare parameters and results
+## Projects - Packaage code to ensure reusability and reproducibility
+## Model - Provides standard unit for packaging models
+## Registry - Central model store for model versioning stage tarnsitions, annotations
+
+# set_tracking uri() 
+## set the default tracking uri for current run
+## we can be empty string, will create then "mlruns" folder
+## we can provide name folder 
+## we can provide file path
+## we can provide remote path
+## we can provide databricks workspace
+
+# get_tracking uri()
+## gives only output 
+
+
