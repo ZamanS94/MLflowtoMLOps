@@ -45,7 +45,11 @@ if __name__ == "__main__":
     alpha = args.alpha
     l1_ratio = args.l1_ratio
 
-    exp = mlflow.set_experiment(experiment_name="ex_1")
+    mlflow.set_tracking_uri(uri="file:/Users/User/Documents/GitHub/-MLflowtoMLOps/test1")
+
+    print("the set trucking uri is:", mlflow.get_tracking_uri())
+
+    exp = mlflow.set_experiment(experiment_name="ex_get_set_uri")
 
     with mlflow.start_run(experiment_id=exp.experiment_id):
         lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)

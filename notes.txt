@@ -12,11 +12,17 @@ Open Source platform to mainatain end to end machine learning life cycle.
 ## set the default tracking uri for current run
 ## we can be empty string, will create then "mlruns" folder
 ## we can provide name folder 
-## we can provide file path
+## we can provide file path -> but only works for C drive 
 ## we can provide remote path
 ## we can provide databricks workspace
 
 # get_tracking uri()
 ## gives only output 
+
+# create_experiment()
+## to create new experiment
+
+# set_experiment()
+## set already created experiment
 
 
