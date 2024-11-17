@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlflow_demo1/mlruns/208425703496943850/f0f6ae5258c2486ab66996f6a2844579/artifacts
+end_time: 1731853821138
+entry_point_name: ''
+experiment_id: '208425703496943850'
+lifecycle_stage: active
+run_id: f0f6ae5258c2486ab66996f6a2844579
+run_name: adaptable-carp-681
+run_uuid: f0f6ae5258c2486ab66996f6a2844579
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731853807808
+status: 3
+tags: []
+user_id: User

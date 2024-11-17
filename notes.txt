@@ -84,6 +84,49 @@ Open Source platform to mainatain end to end machine learning life cycle.
 
 # If we use differernt experiments, we can keep same run name for each experiments
 
+# Auto logging -> captures information in a automatic way -> should be done before the model training phase. 
+# mlflow.autolog() -> will log for all the supported libraries # mlflow.<lib>.autolog() -> library specific logging 
+## log_models -> bollean whether to log the model or not
+## log_input_examples -> can be True to log the input examples from the training dataset 
+## log_model_signatures -> Can be True to log the model signature/ model schema
+## log_datasets -> can be True for logging dataset information
+## disable -> can be True to disable automatic logging
+## exclusive -> if True, content is not logged to user-created fluent runs 
+## disable_for_unsupported_version -> can be True to disable autologging for incompatible versions that are not tested. 
+## silent -> can be True, to supress all event logs and warnings from mlflow 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
