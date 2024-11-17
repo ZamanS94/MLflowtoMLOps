@@ -53,4 +53,25 @@ Open Source platform to mainatain end to end machine learning life cycle.
 ## recently active run, that ended
 ## takes no paramter but returns run object
 
+# mlflow.log_param() # mlflow.log_params()
+
+## to log hyperparamters as key value pair
+## we can provide name and value of the parameter as key value pair / dictionary of key value pairs 
+
+# mlflow.log_metric() # mlflow.log_metrics()
+
+## we can provide name and value of the metric as key, value pair/ dictionary of key value pairs 
+## we can also add step like epoch
+
+# mlflow.log_artifact() # mlflow.log_artifacts()
+## artifact can be anything -> it can be output model, training dataset
+## we need to proivide local path -> path of the file we need to store
+## artifact_path -> where we need to store the dataset
+
+# mlflow.get_artifact_uri()
+## returns absolute URI referring to the specified artifact or the currently active run's artifact root
+
+
+
+
 

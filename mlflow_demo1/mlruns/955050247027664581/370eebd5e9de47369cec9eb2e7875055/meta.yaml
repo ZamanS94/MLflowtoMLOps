@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlflow_demo1/mlruns/955050247027664581/370eebd5e9de47369cec9eb2e7875055/artifacts
+end_time: 1731842933380
+entry_point_name: ''
+experiment_id: '955050247027664581'
+lifecycle_stage: active
+run_id: 370eebd5e9de47369cec9eb2e7875055
+run_name: sneaky-stoat-1000
+run_uuid: 370eebd5e9de47369cec9eb2e7875055
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731842926780
+status: 3
+tags: []
+user_id: User
