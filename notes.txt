@@ -82,6 +82,8 @@ Open Source platform to mainatain end to end machine learning life cycle.
 # Model Checkpoints
 ## we can use this to check performance of the model 
 
+# If we use differernt experiments, we can keep same run name for each experiments
+
 
 
 

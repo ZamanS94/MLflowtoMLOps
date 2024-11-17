@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlflow_demo1/mlruns/220776669826341404/c0d5d12711ee43f092c4294f4e9792ad/artifacts
+end_time: 1731848833653
+entry_point_name: ''
+experiment_id: '220776669826341404'
+lifecycle_stage: active
+run_id: c0d5d12711ee43f092c4294f4e9792ad
+run_name: run2.1
+run_uuid: c0d5d12711ee43f092c4294f4e9792ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731848823550
+status: 3
+tags: []
+user_id: User
