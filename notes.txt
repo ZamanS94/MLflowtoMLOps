@@ -74,6 +74,14 @@ Open Source platform to mainatain end to end machine learning life cycle.
 # mlflow.set_tag() # mlflow.set_tags()
 ## tags are labels to find out specific experiment. it accept key value pair/ dictionary of key value pairs
 
+# Multiple Run
+## we need to complete multiple runs, in on etraining with different data slices
+## for Hyperparameter Tuning, for Incremental Training, For Feature Engineeering, For Cross validation 
+
+
+# Model Checkpoints
+## we can use this to check performance of the model 
+
 
 
 
