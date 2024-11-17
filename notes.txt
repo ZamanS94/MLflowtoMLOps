@@ -100,7 +100,22 @@ Open Source platform to mainatain end to end machine learning life cycle.
 ## log_post_training_metrics -> can be True, to log post-training metrics like r2 score
 ## serialization_format -> model format. joblib for local model. couldpickle for the large distributed model -> can affect the performance 
 ## registered_model_name -> model name
-## pos_label -> we can define the positive class label for binary classification  
+## pos_label -> we can define the positive class label for binary classification 
+
+# Tracking server
+## Its a centralized repository, that stores metadata and atrifacts generated during the training session  
+
+## The storage components -> actually store the artifacts and metadat
+## Two types of Storage -> Backend Store and Artifact Store
+## The Backend Store -> Stores exp name, id, run name, run id, paramters, metrics, tags-> DB Store: SQLite, MYSQL, PostgreSQL -> File Store: Amazon s3, Azure Blob storage, GCS
+## Artifact Store -> Store artifacts like models, data, files
+
+## The networking component -> Allows user to interact with the server using REST API or RPC. Depends on requirements. 
+## Sometimes we have Proxy access -> because of security 
+
+# Creating Tracking Server
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlflow-artifacts --host 127.0.0.1 --port 5000
+
 
 
 
