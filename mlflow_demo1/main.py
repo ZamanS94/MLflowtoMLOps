@@ -35,13 +35,13 @@ if __name__ == "__main__":
     # Read the wine-quality csv file from local
     data = pd.read_csv("red-wine-quality.csv")
 
-    os.mkdir("data/")
-    data.to_csv("data/red-wine-quality.csv",index=False)
+    #os.mkdir("data/")
+    ##data.to_csv("data/red-wine-quality.csv",index=False)
 
     # Split the data into training and test sets. (0.75, 0.25) split.
     train, test = train_test_split(data)
-    train.to_csv("data/train.csv", index=False)
-    test.to_csv("data/test.csv", index=False)
+    #train.to_csv("data/train.csv", index=False)
+    #test.to_csv("data/test.csv", index=False)
 
 
     # The predicted column is "quality" which is a scalar from [3, 9]
@@ -57,7 +57,7 @@ if __name__ == "__main__":
 
     print("the set trucking uri is:", mlflow.get_tracking_uri())
 
-    exp = mlflow.set_experiment(experiment_name="ex_4")
+    exp = mlflow.set_experiment(experiment_name="ex_6")
 
     #get_exp = mlflow.get_experiment(exp_id)
 
@@ -73,6 +73,16 @@ if __name__ == "__main__":
     #mlflow.start_run(run_id="71373a4e24b440dea4d9a50c61e5df5c")
 
     mlflow.start_run()
+
+    # mlflow.set_tag("version","0.1")
+    tags = {
+        "engineering":"MLOps",
+        "version":"0.2"
+
+    }
+
+    mlflow.set_tags(tags)
+
     lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
     lr.fit(train_x, train_y)
 

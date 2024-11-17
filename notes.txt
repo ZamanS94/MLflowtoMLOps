@@ -71,6 +71,9 @@ Open Source platform to mainatain end to end machine learning life cycle.
 # mlflow.get_artifact_uri()
 ## returns absolute URI referring to the specified artifact or the currently active run's artifact root
 
+# mlflow.set_tag() # mlflow.set_tags()
+## tags are labels to find out specific experiment. it accept key value pair/ dictionary of key value pairs
+
 
 
 
