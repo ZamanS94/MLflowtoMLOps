@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlflow_demo1/mlruns/302406199022047883/289c1e6c6b0140b1856aca494a9d7405/artifacts
+end_time: 1731841390468
+entry_point_name: ''
+experiment_id: '302406199022047883'
+lifecycle_stage: active
+run_id: 289c1e6c6b0140b1856aca494a9d7405
+run_name: powerful-stoat-831
+run_uuid: 289c1e6c6b0140b1856aca494a9d7405
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731841383554
+status: 3
+tags: []
+user_id: User

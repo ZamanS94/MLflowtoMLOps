@@ -50,7 +50,7 @@ if __name__ == "__main__":
 
     print("the set trucking uri is:", mlflow.get_tracking_uri())
 
-    exp = mlflow.set_experiment(experiment_name="ex_1")
+    exp = mlflow.set_experiment(experiment_name="ex_2")
 
     #get_exp = mlflow.get_experiment(exp_id)
 
@@ -61,22 +61,37 @@ if __name__ == "__main__":
     print("Lifecycle_stage: {}".format(exp.lifecycle_stage))
     print("Creation timestamp: {}".format(exp.creation_time))
 
-    with mlflow.start_run(experiment_id=exp.experiment_id):
-        lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
-        lr.fit(train_x, train_y)
+    #with mlflow.start_run(experiment_id=exp.experiment_id,run_name="run_1"):
+    #with mlflow.start_run(run_id="71373a4e24b440dea4d9a50c61e5df5c"):
+    #mlflow.start_run(run_id="71373a4e24b440dea4d9a50c61e5df5c")
 
-        predicted_qualities = lr.predict(test_x)
+    mlflow.start_run()
+    lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
+    lr.fit(train_x, train_y)
 
-        (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
+    predicted_qualities = lr.predict(test_x)
 
-        print("Elasticnet model (alpha={:f}, l1_ratio={:f}):".format(alpha, l1_ratio))
-        print("  RMSE: %s" % rmse)
-        print("  MAE: %s" % mae)
-        print("  R2: %s" % r2)
+    (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
 
-        mlflow.log_param("alpha",alpha)
-        mlflow.log_param("l1_ratio",l1_ratio)
-        mlflow.log_metric("rmse",rmse)
-        mlflow.log_metric("r2",r2)
-        mlflow.log_metric("mae",mae)
-        mlflow.sklearn.log_model(lr,"mymodel")
+    print("Elasticnet model (alpha={:f}, l1_ratio={:f}):".format(alpha, l1_ratio))
+    print("  RMSE: %s" % rmse)
+    print("  MAE: %s" % mae)
+    print("  R2: %s" % r2)
+
+    mlflow.log_param("alpha",alpha)
+    mlflow.log_param("l1_ratio",l1_ratio)
+    mlflow.log_metric("rmse",rmse)
+    mlflow.log_metric("r2",r2)
+    mlflow.log_metric("mae",mae)
+    mlflow.sklearn.log_model(lr,"myNewModel_1")
+
+    run = mlflow.active_run()
+    print("id is:",run.info.run_id," name is:",run.info.run_name)
+
+    run = mlflow.last_active_run()
+    print("for last active run    id is:", run.info.run_id, " name is:", run.info.run_name)
+
+    mlflow.end_run()
+
+    run = mlflow.last_active_run()
+    print("for last active run    id is:", run.info.run_id, " name is:", run.info.run_name)

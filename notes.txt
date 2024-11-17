@@ -31,4 +31,26 @@ Open Source platform to mainatain end to end machine learning life cycle.
 ## we can pass experiment name, experiment id
 ## return mlflow.entities.Experiment 
 
+# start_run()
+## starts new MLflow under in an experiment 
+## we can provide run_id -> if need to utilize existing run
+## we can provide experiment_id -> if we don't provide run_id
+## we can provide run_name -> if we don't provide run_id
+## we can provide nested run
+## we can provide tags also
+## we can provide description of any run
+## it returns mlflow.ActiveRun object as a context manager
+## if we use "with", don't need to end manually -> otherwise, we need to end it with end_run
+
+# end_run()
+## to end the start run function 
+
+# active_run()
+## returns which is active now
+## takes no paramter but returns run object 
+
+# last_active_run()
+## recently active run, that ended
+## takes no paramter but returns run object
+
 
