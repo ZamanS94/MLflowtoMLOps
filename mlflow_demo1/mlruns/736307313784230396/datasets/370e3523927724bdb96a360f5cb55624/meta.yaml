@@ -12,5 +12,5 @@ schema: '{"mlflow_colspec": [{"type": "long", "name": "Unnamed: 0", "required": 
   "sulphates", "required": true}, {"type": "double", "name": "alcohol", "required":
   true}]}'
 source: '{"tags": {"mlflow.user": "User", "mlflow.source.name": "main.py", "mlflow.source.type":
-  "LOCAL", "mlflow.source.git.commit": "925570814a6563a2dcb34d7a90274670e69406b0"}}'
+  "LOCAL", "mlflow.source.git.commit": "90a07583b447246c6e8d3d23e552ce4d3aa3e3b6"}}'
 source_type: code

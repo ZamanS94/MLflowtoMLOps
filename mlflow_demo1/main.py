@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
 
     mlflow.set_tags(tags)
-    mlflow.autolog(
+    mlflow.sklearn.autolog(
         log_input_examples=True
     )
     lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)

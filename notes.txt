@@ -95,6 +95,19 @@ Open Source platform to mainatain end to end machine learning life cycle.
 ## disable_for_unsupported_version -> can be True to disable autologging for incompatible versions that are not tested. 
 ## silent -> can be True, to supress all event logs and warnings from mlflow 
 
+# for the mlflow.<lib>.autolog()
+## we can use max_tuning_runs() -> set the max number of child mlflow runs, to analyze the runs effectively. 
+## log_post_training_metrics -> can be True, to log post-training metrics like r2 score
+## serialization_format -> model format. joblib for local model. couldpickle for the large distributed model -> can affect the performance 
+## registered_model_name -> model name
+## pos_label -> we can define the positive class label for binary classification  
+
+
+
+
+
+
+
 
 
 
