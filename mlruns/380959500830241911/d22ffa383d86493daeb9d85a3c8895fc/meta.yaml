@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlruns/380959500830241911/d22ffa383d86493daeb9d85a3c8895fc/artifacts
+end_time: 1746695215176
+entry_point_name: ''
+experiment_id: '380959500830241911'
+lifecycle_stage: active
+run_id: d22ffa383d86493daeb9d85a3c8895fc
+run_name: luxuriant-colt-648
+run_uuid: d22ffa383d86493daeb9d85a3c8895fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746695196223
+status: 3
+tags: []
+user_id: User
