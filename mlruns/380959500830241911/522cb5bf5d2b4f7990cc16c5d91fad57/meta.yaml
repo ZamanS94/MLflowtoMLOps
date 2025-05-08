@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlruns/380959500830241911/522cb5bf5d2b4f7990cc16c5d91fad57/artifacts
+end_time: 1746694797115
+entry_point_name: ''
+experiment_id: '380959500830241911'
+lifecycle_stage: active
+run_id: 522cb5bf5d2b4f7990cc16c5d91fad57
+run_name: illustrious-bass-160
+run_uuid: 522cb5bf5d2b4f7990cc16c5d91fad57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746694789482
+status: 3
+tags: []
+user_id: User

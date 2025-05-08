@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlruns/380959500830241911/6aa0826efa084e7497af6659c31d5b72/artifacts
+end_time: 1746694534518
+entry_point_name: ''
+experiment_id: '380959500830241911'
+lifecycle_stage: active
+run_id: 6aa0826efa084e7497af6659c31d5b72
+run_name: glamorous-turtle-49
+run_uuid: 6aa0826efa084e7497af6659c31d5b72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746694522622
+status: 3
+tags: []
+user_id: User

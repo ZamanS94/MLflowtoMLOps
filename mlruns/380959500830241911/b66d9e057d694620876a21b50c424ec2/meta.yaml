@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/GitHub/-MLflowtoMLOps/mlruns/380959500830241911/b66d9e057d694620876a21b50c424ec2/artifacts
+end_time: 1746694290317
+entry_point_name: ''
+experiment_id: '380959500830241911'
+lifecycle_stage: active
+run_id: b66d9e057d694620876a21b50c424ec2
+run_name: secretive-bat-392
+run_uuid: b66d9e057d694620876a21b50c424ec2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746694282371
+status: 3
+tags: []
+user_id: User

@@ -116,6 +116,20 @@ Open Source platform to mainatain end to end machine learning life cycle.
 # Creating Tracking Server
 mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlflow-artifacts --host 127.0.0.1 --port 5000
 
+# Local Tracking Server Scenarios
+## 1. Artifacts and metrics are stored in the local machine in MLRuns folder. By default
+## 2. Artifacts and metrics are stored in the local machine but metrics are stored in SQLite/ any other database -> we need to use: mlflow.set_tracking_uri(uri="sqlite:///mlflow.db")
+## 3. We have tracking server but that runs in our local machine. we need to use this command -> --backend-store-uri
+
+# Remote Tracking Server Scenarios
+## use this --->   mlflow server --backend-store-uri postgresql://user:password@postgres:5432/mlflowdb --default-artifact-root s3://bucket_name --host remote_host --no-serve-artifacts
+## Tracking Server, Backend Server/PostgreSQL and Artifact Server/ S3 Remote Host -> all will be in different machines.
+## 1. Direct access to both backend store and artifact store
+## 2. We will have proxy access to the servers 
+## 3. We will have proxy access to artifacts. But no access to metadata for the users. ---> mlflow server --artifacts-destination s3://bucket_name --artifacts-only --host remote_host
+
+
+
 
 
 
